@@ -2,6 +2,9 @@ import os
 import asyncio
 import json
 from groq import AsyncGroq
+from dotenv import load_dotenv
+
+load_dotenv()
 from agent_tools import search_web, read_local_file, write_local_file, schedule_event, execute_python_code
 
 # Using the provided key as the default

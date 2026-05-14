@@ -3,6 +3,9 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from groq import AsyncGroq
+from dotenv import load_dotenv
+
+load_dotenv()
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 client = AsyncGroq(api_key=GROQ_API_KEY)
